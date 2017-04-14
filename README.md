@@ -43,5 +43,5 @@ Obtain the developing version from the github:
     
 Load the S-lang MCMC Hammer in your S-Lang script:
 
-    require("sl_emcee");
+    require("isis_emcee");
 
