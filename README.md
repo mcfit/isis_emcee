@@ -5,7 +5,7 @@
 
 ### Installation
 
-1- Install HEASoft: [Download the HEASOFT Software](https://heasarc.nasa.gov/lheasoft/download.html)
+1- Install HEASoft: download [the HEASOFT Software](https://heasarc.nasa.gov/lheasoft/download.html)
 
     gunzip -c heasoft6.19.tar.gz | tar xf -
     cd heasoft-6.19/BUILD_DIR/
@@ -19,7 +19,7 @@
     setenv HEADAS /usr/local/headas/x86_64-unknown-linux-gnu-libc2.7/
     sh install-isis.sh DIR
 
-3- Install ISISscripts: [Download the Remeis ISISscripts](https://heasarc.nasa.gov/lheasoft/download.html)
+3- Install ISISscripts: download [the Remeis ISISscripts](http://www.sternwarte.uni-erlangen.de/isis/)
 
 or obtain the developing version from the ISISscripts git-repository:
 
