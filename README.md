@@ -1,7 +1,6 @@
-# sl_emcee
 **The S-Lang implementation of the affine-invariant MCMC Hammer**
 
-[sl_emcee](http://www.sternwarte.uni-erlangen.de/wiki/doku.php?id=isis:emcee) is an S-Lang implementation of the *affine-invariant Markov chain Monte Carlo (MCMC) ensemble sampler* proposed by [Goodman & Weare (2010)](http://dx.doi.org/10.2140/camcos.2010.5.65), implemented in Python ([emcee](https://github.com/dfm/emcee)) by [Foreman-Mackey et al. (2013)](http://adsabs.harvard.edu/abs/2013PASP..125..306F), which has then been implemented in the [Interactive Spectral Interpretation System (ISIS)](http://space.mit.edu/cxc/isis/) in S-Lang by [Michael A. Nowak](http://space.mit.edu/home/mnowak/isis_vs_xspec/), modified by Tobias Beuchert, Lia Corrales, and Matthias Kuehnel. It is now included in the [Remeis ISISscripts](http://www.sternwarte.uni-erlangen.de/isis/).
+[isis_emcee](http://www.sternwarte.uni-erlangen.de/wiki/doku.php?id=isis:emcee) is an S-Lang implementation of the *affine-invariant Markov chain Monte Carlo (MCMC) ensemble sampler* proposed by [Goodman & Weare (2010)](http://dx.doi.org/10.2140/camcos.2010.5.65), implemented in Python ([emcee](https://github.com/dfm/emcee)) by [Foreman-Mackey et al. (2013)](http://adsabs.harvard.edu/abs/2013PASP..125..306F), which has then been implemented in the [Interactive Spectral Interpretation System (ISIS)](http://space.mit.edu/cxc/isis/) in S-Lang by [Michael A. Nowak](http://space.mit.edu/home/mnowak/isis_vs_xspec/), modified by Tobias Beuchert, Lia Corrales, and Matthias Kuehnel. It is now included in the [Remeis ISISscripts](http://www.sternwarte.uni-erlangen.de/isis/).
 
 ### Installation
 
@@ -39,7 +38,7 @@ Load the ISISscripts in your S-Lang script:
 
 Obtain the developing version from the github:
 
-    git clone https://github.com/mcfit/sl_emcee.git
+    git clone https://github.com/mcfit/isis_emcee.git
     
 Load the S-lang MCMC Hammer in your S-Lang script:
 
