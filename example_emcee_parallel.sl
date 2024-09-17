@@ -1,3 +1,6 @@
+%%! /usr/bin/env isis
+% -*- slang -*-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 require("isis_emcee");
 require("isisscripts");
 
@@ -26,8 +29,13 @@ emcee(
   num_slaves=4, nice=19 % perform a calculation on multi cores (see below)
 );
 
+variable nw, nfreepar, freepar, i;
+variable chain_statistic, chain;
+
 (nw, nfreepar, freepar, chain_statistic, chain) = read_chain("emcee-chain.fits");
 
+% New Windows
+variable id1 = open_plot("/xwin");
 close_plot; % start with a fresh plot window
 _for i (0, nw-1, 1) { % loop over all walkers
                       % and plot their path
@@ -40,11 +48,16 @@ _for i (0, nw-1, 1) { % loop over all walkers
   ); 
 };
 
+% New Windows
+variable id1 = open_plot("/xwin");
+variable frac_update;
 frac_update = read_chain("emcee-chain.fits"; frac_update);
  xlabel("Iteration Step");
  ylabel("Acceptance Rate");
  plot([0:length(frac_update)-1], frac_update);
 
+% New Windows
+variable id3 = open_plot("/xwin");
 chain_hist(
   0,          % number of the free parameter (here: power-law norm)
   chain;      % the chain
